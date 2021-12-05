@@ -1,2 +1,3 @@
-# nft-preview-card
-nft preview card component
+# nft-preview-card-component
+
+Challange taken from frontend.io and done in HTML & CSS
