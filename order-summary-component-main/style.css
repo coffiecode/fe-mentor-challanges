@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+/*  STYLE RESET  */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);    
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: var(--pale-blue);
+    font-family: "Red Hat Display", sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--desaturated-blue);
+}
+
+h1 {
+    color: var(--dark-blue);
+    margin: 20px 0 10px 0;
+    font-weight: 900;
+}
+
+.wrapper {
+    background-color: var(--very-pale-blue);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px hsl(224, 23%, 55%, 0.3);
+    padding-bottom: 20px;
+}
+
+.wrapper p#desc {
+    padding: 0 30px;
+
+}
+
+.wrapper img#hero {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.wrapper .price {
+    background-color: hsl(225, 100%, 94%, 0.4);
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .price article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .price article img {
+    margin-right: 20px;
+}
+
+.buttons {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.wrapper .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.btn-footer {
+    width: 90%;
+}
+
+.btn-change {
+    background-color: transparent;
+    color: var(--bright-blue);
+    text-decoration: underline;
+}
+
+.btn-change:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background-color: var(--bright-blue);
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 3px hsl(245, 75%, 52%, 0.25);
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--desaturated-blue);
+    /*setting margin-top here is same as setting margin-bottom in secondary*/
+    padding: 15px;
+}
+
+.btn-secondary:hover {
+    color: var(--dark-blue);
+}
+
+.bg-img {
+    background: url("/images/pattern-background-mobile.svg") no-repeat center/cover;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+@media (min-width: 400px) {
+    .bg-img {
+        background: url("/images/pattern-background-desktop.svg") no-repeat center/cover;
+        height: 50vh;
+    }
+
+    .wrapper {
+        width: 400px;
+    }
+}
